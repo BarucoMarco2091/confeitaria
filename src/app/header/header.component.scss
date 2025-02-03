@@ -1,0 +1,90 @@
+@import '../header/variables.scss';
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh 5dvh;
+
+    i {
+        color: $primaryWhite;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 4dvh;
+        list-style: none;
+        text-decoration: none;
+        color: $primaryWhite;
+        font-weight: 500;
+
+        .nav-link {
+            transition: color .8s, border-bottom .8s;
+        }
+
+        .nav-link:hover {
+            color: $red;
+            border-bottom: $red 1px solid;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+
+        i {
+            margin-right: 2dvh;
+            transition: color .8s;
+            font-size: 1.2rem;
+        }
+
+        i:hover {
+            color: $red;
+        }
+    }
+}
+
+#carouselExampleCaptions {
+    position: relative;
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 30%;
+
+        .carousel-title {
+            font-size: 2.5rem;
+            color: $title;
+        }
+
+        .carousel-paragraph {
+            color: $title;
+            line-height: 1.25rem;
+        }
+
+        .carousel-btn {
+            border: none;
+            height: 5dvh;
+            width: 30dvh;
+            border-radius: 2dvh;
+            background-color: $green;
+            color: $title;
+            margin-top: 3dvh;
+            transition: background-color .8s;
+            animation: pulse 1s infinite linear;
+        }
+
+        .carousel-btn:hover {
+            background-color: $primaryGreen;
+        }
+    }
+}
