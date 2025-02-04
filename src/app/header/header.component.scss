@@ -57,6 +57,14 @@ nav {
 #carouselExampleCaptions {
     position: relative;
 
+    .carousel-item {
+        img {
+            height: 90dvh;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+    }
+
     .carousel-caption {
         position: absolute;
         bottom: 30%;
