@@ -47,6 +47,12 @@ nav .nav-links i:hover {
 #carouselExampleCaptions {
   position: relative;
 }
+#carouselExampleCaptions .carousel-item img {
+  height: 90dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(50%);
+}
 #carouselExampleCaptions .carousel-caption {
   position: absolute;
   bottom: 30%;
