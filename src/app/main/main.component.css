@@ -21,4 +21,12 @@
 .container img {
   border-radius: 2dvh;
   filter: brightness(50%);
+}
+
+@media (width <= 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 1dvh 1dvh;
+  }
 }/*# sourceMappingURL=main.component.css.map */

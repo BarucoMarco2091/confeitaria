@@ -29,9 +29,9 @@
     <div class="fullscreen" [style.display]="isModalOpen ? 'block' : 'none'">
         <div class="carrinho">
             <h2>Meu carrinho</h2>
-            <div #cartItemsContainer>
+            <div id="cart-items-container" #cartItemsContainer>
                 <div *ngFor="let item of cart" class="cart-item">
-                    <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
                         <div>
                             <p>{{ item.name }}</p>
                             <p>Qtd: {{ item.quantity }}</p>
@@ -45,11 +45,11 @@
             </div>
             <p>Total: <span>{{ total | currency: 'BRL' }}</span></p>
             <p>Endereço de entrega:</p>
-            <input type="text" [(ngModel)]="address" placeholder="Digite seu endereço completo">
+            <input id="address" type="text" [(ngModel)]="address" placeholder="Digite seu endereço completo">
             <div *ngIf="showAddressWarning">Digite seu endereço completo!</div>
             <div>
-                <button (click)="closeModal()">Fechar</button>
-                <button (click)="checkout()">Finalizar pedido</button>
+                <button class="close-btn" (click)="closeModal()">Fechar</button>
+                <button class="checkout-btn" (click)="checkout()">Finalizar pedido</button>
             </div>
         </div>
     </div>
