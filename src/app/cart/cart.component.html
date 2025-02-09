@@ -17,7 +17,7 @@
 <div class="location"  data-aos="flip-left">
     <h2>Venha nos conhecer</h2>
     <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6777886461514!2d-46.562530599999995!3d-23.687478100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4353fea4c1a9%3A0xff3b58ed38024100!2sCileide%20Lanfredi%20-%20Hair%20Studio!5e0!3m2!1spt-BR!2sbr!4v1738704441178!5m2!1spt-BR!2sbr"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.941368581211!2d-46.55676735!3d-23.678054649999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43ab7d524b93%3A0xf245b38358266241!2sMarco%20Zero%20-%20Vila%20Tereza%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1739130592035!5m2!1spt-BR!2sbr"
         width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
 </div>
 
@@ -31,7 +31,7 @@
             <h2>Meu carrinho</h2>
             <div id="cart-items-container" #cartItemsContainer>
                 <div *ngFor="let item of cart" class="cart-item">
-                    <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; justify-content: space-between; max-height: 400px; overflow-y: auto;">
                         <div>
                             <p>{{ item.name }}</p>
                             <p>Qtd: {{ item.quantity }}</p>
