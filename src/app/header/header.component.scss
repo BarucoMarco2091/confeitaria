@@ -4,6 +4,7 @@
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(1.1);
     }
@@ -52,6 +53,48 @@ nav {
             color: $red;
         }
     }
+
+    #mobile_btn {
+        display: none;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+
+#mobile_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    padding: 1rem;
+    z-index: 77;
+
+    &.open {
+        display: flex;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav_item {
+        font-size: 1rem;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: $chocolate;
+        }
+    }
 }
 
 #carouselExampleCaptions {
@@ -94,5 +137,31 @@ nav {
         .carousel-btn:hover {
             background-color: $primaryGreen;
         }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_btn {
+        display: block !important;
+        margin: 2dvh 2dvh;
+    }
+}
+
+@media (width <= 768px) {
+    .carousel-item img {
+        height: 90% !important;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none !important;
     }
 }

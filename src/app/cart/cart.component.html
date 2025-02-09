@@ -31,7 +31,7 @@
             <h2>Meu carrinho</h2>
             <div id="cart-items-container" #cartItemsContainer>
                 <div *ngFor="let item of cart" class="cart-item">
-                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="display: flex; justify-content: space-between;">
                         <div>
                             <p>{{ item.name }}</p>
                             <p>Qtd: {{ item.quantity }}</p>
