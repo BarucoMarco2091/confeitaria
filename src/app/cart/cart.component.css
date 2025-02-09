@@ -6,7 +6,7 @@
   margin: auto;
 }
 .menu h2 {
-  color: #f0e0d1;
+  color: #fff;
   padding-top: 10dvh;
   padding-bottom: 4dvh;
 }
@@ -71,7 +71,7 @@
   text-align: center;
   margin-top: 5dvh;
   margin-bottom: 5dvh;
-  color: #f0e0d1;
+  color: #fff;
 }
 .location iframe {
   width: 100%;
@@ -86,7 +86,7 @@
   height: 5dvh;
   border: 1px solid;
   background-color: #49372a;
-  color: #f0e0d1;
+  color: #fff;
   transition: opacity 1s;
 }
 .cart-modal-button #cart-btn:hover {

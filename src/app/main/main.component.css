@@ -9,11 +9,11 @@
 }
 .container .text h1 {
   text-align: center;
-  color: #f0e0d1;
+  color: #fff;
 }
 .container .text p {
   line-height: 2rem;
-  color: #f0e0d1;
+  color: #fff;
 }
 .container div {
   flex: 1;
