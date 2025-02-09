@@ -27,6 +27,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    padding: 1dvh 1dvh;
     margin: 1dvh 1dvh;
   }
 }/*# sourceMappingURL=main.component.css.map */

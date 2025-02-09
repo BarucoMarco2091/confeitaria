@@ -40,6 +40,10 @@ button {
   font-family: "Roboto", serif;
 }
 
+i {
+  cursor: pointer;
+}
+
 a {
   cursor: pointer;
 }
