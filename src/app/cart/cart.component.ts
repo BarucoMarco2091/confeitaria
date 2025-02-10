@@ -20,10 +20,10 @@ export class CartComponent {
   menuItems = [
     { name: 'Brigadeiro', price: 10.00, image: '/brigadeiro.png' },
     { name: 'Beijinho', price: 8.00, image: '/beijinho.png' },
-    { name: 'Quindim', price: 12.00, image: '/quindim.png' },
-    { name: 'Pudim', price: 15.00, image: '/brigadeiro.png' },
-    { name: 'Cocada', price: 13.00, image: '/beijinho.png' },
-    { name: 'Bolo de Chocolate', price: 15.00, image: '/quindim.png' }
+    { name: 'Quindim', price: 12.00, image: '/quindim.jpg' },
+    { name: 'Pudim', price: 15.00, image: '/pudim.png' },
+    { name: 'Cocada', price: 13.00, image: '/cocada.png' },
+    { name: 'Bolo de Chocolate', price: 15.00, image: '/bolodechocolate.jpg' }
   ];
 
   cart: CartItem[] = [];
